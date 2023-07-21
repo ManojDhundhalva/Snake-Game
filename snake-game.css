@@ -1,0 +1,249 @@
+#myCanvas {
+    border: 1px solid black;
+    margin-left: 1%;
+}
+
+#score {
+    display: flex;
+    font-family: cursive;
+    font-size: 400%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: cursive;
+    font-size: 200%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: white;
+
+    cursor: pointer;
+    /* background-color: aqua; */
+    transition: all 0.2s;
+    position: absolute;
+
+    visibility: hidden;
+}
+
+#reset:hover {
+    background-color: #e6eaff;
+    /* transform: matrix(0, 1 ,1, 0, 0, 0); */
+    /* transform: scale(0.7); */
+    /* transform: skew(-5deg,-10deg); */
+    /* transform: rotate(10deg); */
+}
+
+
+#reset:active {
+    background-color: #b7c3ff;
+    transform: translate(0px, 5px);
+}
+
+body {
+    overflow: hidden;
+    /* background-color: rgb(245, 250, 255); */
+}
+
+.myBody {
+    width: fit-content;
+    display: flex;
+    /* position: fixed; */
+    /* background-color: blueviolet; */
+}
+
+.display-score,
+.display-shape,
+.display-difficulty,
+.display-radius {
+    font-family: cursive;
+    /* background-color: rgb(255, 165, 48); */
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.display-score {
+    margin-top: 10%;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+    /* background-color: lightblue; */
+}
+
+.second {
+    flex: 3.8;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: lightpink; */
+}
+
+.firstOuterBox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* position: relative; */
+    border-radius: 30px;
+    background-color: lavender;
+    /* background-color: #e6eaff; */
+    justify-content: space-between;
+}
+
+#designShape {
+    /* border: 4px solid blue; */
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#shapeSlider {
+    cursor: pointer;
+    flex: 1;
+}
+
+#shapeSlider2 {
+    cursor: pointer;
+    flex: 1;
+}
+
+.range1,
+.range2 {
+    font-family: cursive;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.myRange {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.secondBox {
+    margin-top: 6%;
+    /* margin-bottom: 12%; */
+}
+
+.myRange2 {
+    margin-top: 7%;
+}
+
+.resetDiv {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(255, 8, 8, 0.2);
+    top: 50%;
+    left: 46%;
+    width: 8%;
+    height: 10%;
+    position: absolute;
+}
+
+.thirdBox {
+    font-family: cursive;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 10%;
+    display: flex;
+}
+
+.up {
+    transform: rotate(-90deg);
+}
+
+.left {
+    transform: rotate(-180deg);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.playing {
+    width: 60px;
+}
+
+/* .MY-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: cursive;
+    font-size: 280%;
+    margin-bottom: 1%;
+
+    letter-spacing: 1px;
+    font-weight: 700;
+
+    background-image: url(tekari.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-animation : antialiased;
+
+} */
+.MY-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+}
+
+.MY-img video {
+    width: 100%;
+    object-fit: cover;
+    /* border: 4px solid black; */
+    border-radius: 20px;
+}
+
+.text-container {
+    font-family: cursive;
+    font-size: 340%;
+
+    letter-spacing: 1px;
+    font-weight: 700;
+
+
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* top: 50%; */
+    /* left: 40%; */
+    position: absolute;
+
+    /* background: rgb(255, 244, 251); */
+    /* background: #f7f1ff; */
+    background: #fff4ff;
+    /* background: #fff3fd; */
+    color: black;
+    mix-blend-mode: screen;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

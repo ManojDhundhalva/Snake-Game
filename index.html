@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snake-game.css">
+
+    <link rel="icon" href="t2.png" type="image/x-icon">
+
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="myBody" id="mybody">
+        <div class="first" id="First">
+            <div class="firstOuterBox" id="FirstOuterBox">
+                <div>
+                    <div>
+                        <div class="display-score">Score :</div>
+                        <label for="scoreCounting" id="score">0</label>
+                    </div>
+                    <div class="secondBox">
+                        <div class="display-shape">Shape :</div>
+                        <canvas id="designShape"></canvas>
+                        <div class="myRange">
+                            <input type="range" min="2" max="12" value="6" id="shapeSlider">
+                            <div class="range1" id="Range1">
+                                10
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="secondBox">
+                        <div class="display-difficulty">Difficulty :</div>
+                        <div class="myRange myRange2">
+                            <input type="range" min="1" max="6" value="2" id="shapeSlider2">
+                            <div class="range2" id="Range2">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MY-img">
+                    <video autoplay loop muted>
+                        <source src="water-video.mp4" type="video/mp4" />
+                    </video>
+                    <div class="text-container">
+                        <div style="width:min-content;">
+                            Snake Game
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="thirdBox">
+                        <div>Press keys :</div>
+                        <div class="up">&#10140;</div>
+                        <div class="left">&#10140;</div>
+                        <div class="down">&#10140;</div>
+                        <div>&#10140;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second" id="Second">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <button type="button" id="reset">
+            Restart
+        </button>
+    </div>
+    <script src="audio.js"></script>
+    <script src="snake-game.js"></script>
+    <script src="shape.js"></script>
+
+</body>
+
+</html>
